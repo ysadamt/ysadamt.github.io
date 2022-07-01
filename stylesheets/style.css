@@ -3,8 +3,13 @@
 body {
     background-color: #fafafa;
     text-align: center;
-    color: rgb(80, 80, 80);
+    color: #505050;
     font-family: 'Inter', sans-serif;
+}
+
+.dark-mode {
+  background-color: #1a1a1a;
+  color: #fafafa;
 }
 
 #main {
@@ -17,48 +22,9 @@ body {
 h1 {
     font-size: 80px;
 }
+
 .chineseFont {
     font-family: 'Noto Sans SC', sans-serif;
-}
-
-  .item-1, 
-  .item-2,
-  .item-3 {
-    position: absolute;
-    display: block;
-      animation-duration: 20s;
-      animation-timing-function: ease-in-out;
-      animation-iteration-count: infinite;
-  }
-
-.item-1{
-	animation-name: anim-1;
-}
-
-.item-2{
-	animation-name: anim-2;
-}
-
-.item-3{
-	animation-name: anim-3;
-}
-
-@keyframes anim-1 {
-	0%, 8.3% {opacity: 0; }
-  8.3%,25% {opacity: 1; }
-  33.33%, 100% {opacity: 0; }
-}
-
-@keyframes anim-2 {
-	0%, 33.33% {opacity: 0; }
-  41.63%, 58.29% {opacity: 1; }
-  66.66%, 100% {opacity: 0; }
-}
-
-@keyframes anim-3 {
-	0%, 66.66% {opacity: 0; }
-  74.96%, 91.62% {opacity: 1; }
-  100% {opacity: 0; }
 }
 
 a {
@@ -70,31 +36,7 @@ p {
     font-size: 14px;
 }
 
-.underline{
-    position: relative;
-    text-decoration: none;
-    color: inherit;
-  }
-  
-  .underline::before{
-    content: '';
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    width: 0;
-    height: 18px;
-    opacity: 0.2;
-    background-color: rgb(162, 162, 162);
-    transition: width 0.6s cubic-bezier(0.25, 1, 0.5, 1);
-  }
-  
-  @media (hover: hover) and (pointer: fine) {
-    .underline:hover::before{
-      left: 0;
-      right: auto;
-      width: 100%;
-    }
-  }
+
 
 footer {
     position: fixed;
